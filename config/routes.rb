@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :admin do
-  get 'sessions/new'
+  get 'login' => 'sessions#new', :as => 'login'
   end
 
   namespace :admin do
@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-  get 'sessions/new_create'
+  get 'sessions/create'
   end
 
   namespace :admin do
@@ -112,12 +112,15 @@ Rails.application.routes.draw do
   get 'posts/index'
 
   get 'posts/show'
-  resources :posts, :categories, :comments
+  resources :posts, :categories
   resources :contacts, only: [:new, :create]
   namespace :admin do 
     resources :posts, :categories, :comments, :users
+    resources :sessions
   end
-
+  resources :posts do
+    resources :comments
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

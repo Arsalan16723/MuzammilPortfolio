@@ -1,4 +1,4 @@
-class Blog::UsersController < Blog::ApplicationController
+class UsersController < ApplicationController
 
 def index
 

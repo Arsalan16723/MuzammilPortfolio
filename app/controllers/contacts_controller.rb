@@ -1,4 +1,4 @@
-class Blog::ContactsController < Blog::ApplicationController
+class ContactsController < ApplicationController
   def new
   end
 
