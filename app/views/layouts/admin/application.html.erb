@@ -36,8 +36,9 @@
               <div id="user_nav" class="pull-right">
                 <% if current_user %>
                   Logged in as <%= current_user.email %>
-                  <%= link_to "logout", admin_login_path %>
-               
+                  <%= link_to "logout", admin_logout_path %>
+                <% else %>
+                  <%= link_to 'logout', admin_login_path %>
                 <% end %>
               </div>
               <% if flash[:notice] %>
