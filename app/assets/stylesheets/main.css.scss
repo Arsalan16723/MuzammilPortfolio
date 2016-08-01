@@ -5,17 +5,17 @@ body{
 }
 
 .navbar{
-	margin-top: 0;
 	overflow: auto;
 	min-height: 100px;
-	background: #36424a;
+	background: #000;
 	color:#fff;
 	font-size: 18px;
 	border:8;
 	border-radius: 0;
-
 }
-
+.navbar a h1 {
+	color:#00FFFF;
+}
 .navbar h1{
 	margin:10px 0 0 0 ;
 	padding: 0;
@@ -111,9 +111,6 @@ small{
 .post .btn{
 	display: block;
 	margin-top: 20px;
-}
-.comments img{
-	width: 100%;
 }
 #foot{
 	background: #36424a;

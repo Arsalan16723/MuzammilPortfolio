@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <%= stylesheet_link_tag 'admin/application', media: 'all', 'data-turbolinks-track' => true %>
@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-  	<nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><h1>mBlog<h1><span>/Manager</span></a>
+          <a href='<%=root_path %>' class='navbar-brand' ><h1>7Diary</h1><span>/Manager</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -56,7 +56,7 @@
       </div>
     </section>
     <footer id="foot">
-      <p>Copyright &copy; 2016, ZAT | <a href="login.html">Admin login</a> </p>
+      <p>Copyright &copy; 2016, AF7 | <a href="login.html">Admin login</a> </p>
     </footer>
     
   </body>
